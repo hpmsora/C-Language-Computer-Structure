@@ -1,0 +1,199 @@
+/* main.c --- 
+ * 
+ * Filename: main.c
+ * Description: Main Method
+ * Author: Won Yong Ha
+ * Maintainer: 
+ * Created: 18 March 2016
+ * Last-Updated: 
+ *           By: Won Yong Ha
+ *     Update #: 1
+ * Keywords: Main Method
+ * 
+ */
+
+/* Commentary: 
+ *  None
+ * 
+ * 
+ */
+
+/* Change log:
+ *  None
+ * 
+ */
+
+/* Copyright (c) 2015 The Trustees of Indiana University and 
+ * Indiana University Research and Technology Corporation.  
+ * 
+ * All rights reserved. 
+ * 
+ * Additional copyrights may follow 
+ */
+
+/* Code: */
+#include <stdio.h> 
+#include <stddef.h> 
+#include <stdint.h> 
+#include "testvector.h"
+#include "machine.h"
+#include "flags.h"
+
+uint32_t reg[16];
+uint32_t psr;
+
+int main(void) {
+  // Argument to test_instructions can be ALL to run all of tests or a specific
+  // instruction can be tested by passing the name. 
+  // ADCS, ADDS, SUBS, ANDS, BICS, LSLS, ASRS
+  // To run the instruction tests for all of the instructions, pass ALL
+  test_instructions(ANDS);
+  test_instructions(ADCS);
+  return (0);
+}
+
+void ands(int rn, int rm) {
+  // Include your code to emulate the "and" instruction:
+  // subs rn, rm
+  // rn = index where operand1 is located in reg[], also destination for result
+  // rm = index where operand2 is located in reg[]
+
+  reg[rn] &= reg[rm];
+
+  // Negative Flag 
+  if (reg[rn]&0x80000000) SET_N;
+  else CLEAR_N;
+ 
+  // Zero Flag 
+  if (!reg[rn]) SET_Z;
+  else CLEAR_Z;
+ }
+
+void adcs(int rn, int rm) {
+  // Include your code to emulate the "adc" instruction:
+  // adcs rn, rm
+  // rn = index where operand1 is located in reg[], also destination for result
+  // rm = index where operand2 is located in reg[]
+  //reg[rn] &= reg[rm];
+  int c = reg[rn];
+  if (psr == 0x20000000) reg[rn] += reg[rm] + 1;
+  else reg[rn] += reg[rm];
+  //printf("--------------%d\n", c);
+  int i = 0;
+  /*
+  for(i; i<16; i++) {
+    printf("%d ", reg[i]);
+  }
+  printf("---  %d", c);
+  printf("---  %d", reg[rm]);
+  printf("------  %x", reg[rn]);
+  printf("\n");*/
+  int xrn = reg[rn];
+  int xrm = reg[rm];
+  // c = c - reg[rm];
+  /*if (reg[rn]== 0) {
+    if (c > reg[rn]) {
+      SET_C;
+      SET_Z;
+    }
+    else
+      SET_Z;
+  }
+  else if (reg[rn]&0x80000000) SET_N;
+  //else CLEAR_N;
+
+  //reg[rn]>>1;
+
+  //else  if (reg[rn]&0x40000000) SET_Z;
+  //else CLEAR_Z;
+
+  //reg[rn]>>1;
+
+  else if (reg[rn]&0x20000000) SET_C;
+  //else CLEAR_C;
+  
+  //reg[rn]>>1;
+  
+  else if (reg[rn]&0x10000000) SET_V;
+  //else CLEAR_V;
+
+  //reg[rn]<<1;
+  
+  //else if (reg[rn]&0x1000000) SET_V;
+  //else if (reg[rn] == 0) SET_C;
+  else psr = 0;*/
+  
+  //zero
+  psr = 0;
+  if (reg[rn] == 0) {
+    if (c > reg[rn]) {
+      SET_C;
+      SET_Z;
+    }
+    else
+      SET_Z;
+  }
+  
+  //negative
+  if (reg[rn] & 0x80000000) {
+    SET_N;
+  }
+
+  //carry
+  if(c > reg[rn]) {
+    SET_C;
+  }
+  
+  //overflow
+  //if ((c > 0) && (reg[rm] > 0) && reg[rn] > 0) {
+    //if(reg[rn] < c || reg[rn] < reg[rm])
+    //if(reg[rn] )      
+  //SET_V;
+  //}
+  /*if (c > 0 || reg[rm] > 0)
+    if(reg[rn] >= 0x80000000)
+    SET_V;*/
+  if (c > 0 && xrm > 0)
+    //printf("AAAAAAAAAAAAAAAAAAAAA");
+    if (xrn < 0)
+      //printf("CCCCCCCCCCCCCCCC");
+      SET_V;
+}
+
+void adds(int rn, int rm) {
+  // Include your code to emulate the "add" instruction:
+  // adds rn, rm
+  // rn = index where operand1 is located in reg[], also destination for result
+  // rm = index where operand2 is located in reg[]
+  reg[rn] &= reg[rm];
+
+}
+
+void bics(int rn, int rm) {
+  // Include your code to emulate the "bics" instruction:
+  // subs rn, rm
+  // rn = index where operand1 is located in reg[], also destination for result
+  // rm = index where operand2 is located in reg[]
+  reg[rn] &= reg[rm];
+
+}
+
+void lsls(int rn, int rm) {
+  // Include your code to emulate the "lsls" instruction:
+  // subs rn, rm
+  // rn = index where operand1 is located in reg[], also destination for result
+  // rm = index where operand2 is located in reg[]
+  reg[rn] &= reg[rm];
+
+}
+
+void asrs(int rn, int rm) {
+  // Include your code to emulate the "asrs" instruction:
+  // subs rn, rm
+  // rn = index where operand1 is located in reg[], also destination for result
+  // rm = index where operand2 is located in reg[]
+  reg[rn] &= reg[rm];
+
+}
+
+/* main.c ends here */

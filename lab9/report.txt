@@ -1,0 +1,44 @@
+###############################################################
+##
+## Won Yong Ha
+##
+## Lab 9 Report
+##
+## Start: 26 March 2016
+## End: 26 March 2016
+##
+##############################################################
+
+Q1.
+
+The reason is all the initialization is in the i2c src file.
+
+Q2.
+
+Credit by Internet
+"There's no specification on what byte mode when reading through the nunchuk"
+
+Q3
+
+  unsigned char jx; -> joystick x-axis variable output: 1 ~ 255
+  unsigned char jy; -> joystick y-axis variable output: 1 ~ 255
+  unsigned short ax; -> joystick x accel
+  unsigned short ay; -> joystick y accel
+  unsigned short az; -> joystick z accel
+  unsigned char c; -> joystick's c button press or not: 1 or 0
+  unsigned char z; -> joystick's z button press or not: 1 or 0
+
+Q4
+
+Set z and c to 1 or 0
+arrows means getting value in data structure.
+
+
+Difficulties
+The major difficulties to read the joystick's variable as datastructure way.
+Previously most of the data's form as number or array but this time was
+data structure.
+
+Learned
+I learned how to use the nunchuk which related to other devices than the
+ST board. Also much more confidence for swiching screens.

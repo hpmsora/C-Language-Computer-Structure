@@ -1,0 +1,53 @@
+///////////////////////////////////////////////////////////////
+//
+// Won Yong Ha
+//
+// CSCI-C 335
+// Lab 10
+//
+// Start: 28 March 2016
+// End: 6 April 2016
+//
+///////////////////////////////////////////////////////////////
+
+Q1.) What are we doing here and how does it relate to what we know about SPI?
+
+High means SPI putting SPI bus so that can operate other functions
+Low means waiting for other data
+
+
+Q2.) Explain how you might use the *f3d_delay_uS()* function
+  within the *delay()* function to replace the delay loop
+  below. What would you expect to be the advantage of using a
+  timer over a delay loop?
+
+replaying repeat indead delay.
+
+
+Q3.) Read chapter 12 in the lab manual which covers DMA (direct memory access).
+  Why might DMA be important in improving the performance of your image display application?
+
+Using D<A make LCD application to the data putting in the application so that it
+makes whole machine working.
+
+
+Q4.) Research the FAT file system and describe the function of the file allocation
+  table. Explain how the corruption of an entry in the table can cause part of a file to be lost.
+
+FAT keeps the track of the data and file location. If the entry corruption the FAT
+does not accept any file anymore.
+
+
+Q5.) What is the difference between FAT16 and FAT32? 
+
+FAT16: Much more restrict
+FAT32: more size supported
+
+
+
+Dificulties:
+The drawing picture was quite difficult but it is easy to solve later. Also the rc=3 problem
+was terrible. The major solution for rc=3 was just changing machine.
+
+Learned
+Mostly how to read the image and change different format.

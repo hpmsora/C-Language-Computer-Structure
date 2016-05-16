@@ -1,0 +1,43 @@
+######################################################
+Won Yong Ha (woha)
+
+Partner: Qian, Dai (qdai)
+
+Feb 11 2016
+
+CSCI-C 335 Lab 4
+
+Due Feb 11 2016
+######################################################
+
+1)
+Flash: 1024KB
+Ram: 128KB
+Speed: 100MHz
+
+2)
+GPIO: General-purpose Input/Output
+
+3)
+Not it is not
+because the delay is depend on each devices.
+
+4)
+Input
+pin number: 15 11
+
+Output
+port number: R43 R44
+
+5)
+assigning some of the functions or variables such as pin, mode of operation
+output type, pull registtor.
+
+
+Difficulties
+
+One of the most defficult part was initicializing.
+Very unfamilier code was suddered for me.
+But the real problem was makefile.
+I did all code but I was forgot to change makefile so I suffered for quit
+awhile for that.

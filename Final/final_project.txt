@@ -1,0 +1,23 @@
+2-Player Snake
+--------------
+
+Each player has a wii nunchuk that controls a snake.
+Player 1 controls the green snake on the left side of the screen,
+Player 2 controls the red snake on the right side of the screen.
+Players move around the board trying to collect the blue "food" blocks.
+When a player eats food, their snake grows by one unit.
+Whoever has the longer snake when all the food is consumed wins.
+If any player collides with themself, their opponent, or a wall,
+they lose immediately. 
+
+Tasks
+-----
+
+- Come up with idea for game: Won Yong
+- Initialize Wii nunchuk and read direction input from it: Won Yong
+- Design the snake data structure: Max
+- Design the board data structure: Max
+- Wire the board every single time: Won Yong
+- Implement a linked list data structure to remember snake movement: Collaborative
+- Load and play audio files from SD card: Collaborative
+- Fix Makefile, header issues, and git problems: Max

@@ -1,0 +1,44 @@
+Won Yong Ha
+
+CSCI-C 335
+Lab8 Lab Report
+
+Start: Mar 10 2016
+End:   Mar 10 2016
+
+Q1)
+Pin Descriptions
+There are 14 pins.
+Pin number   Name
+1   	     Vdd_IO
+2	     SCL
+3	     SDA
+4	     INT2
+5	     INT1
+6	     C1
+7	     GND
+8
+9	     DRDY
+10
+11
+12	     SETP
+13	     SETC
+14	     Vdd
+Electrical Characteristics
+The accelerometer/magnetometer is from 2.16 ~ 3.6
+The accelerometer is located right side fo the pins below
+the user usb port.
+
+Q2)
+To keep recieving the data to acceleromer/magnetomer.
+
+Q3)
+The for loop changes the accelerometer data to human language
+which we can understand more easier.
+
+Q4)
+Tilt compass would be more accurate when it used by pitch and roll are not 0 degree.
+
+Difficulties
+It is difficult to figure out what roll and pitch doing and what those data means.
+Also visualization part was also hard to do that due to calculate the position.

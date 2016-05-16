@@ -1,0 +1,46 @@
+Name: Won Yong Ha (woha)
+Partner: Qian Dai(qdai)
+Date: Feb 16 2016
+
+/////////////////////////////////////////////////////////////
+1. How many connections are required to communicate over UART?
+   
+   4 connection required; USB, RX, TX, GND connections.
+
+2. What is the purpose of "alternate functions" for  GPIO pins?
+   
+   The Purpose of alternate functions is to protect the using 
+   peripheral from other using; refering as general function.
+
+3. Define "baud rate" in your own words.
+   
+   Baud rate is one of the rate of the time to trasfering the
+   data throughout the machine.
+
+4. Why do we need newlib_stubs? Specifically, is there a reason
+   that printf won't work on the board without it?
+   
+   The reason we cannot use printf without newlib_stubs is the
+   machine cannot calculate the printf instead the machine knows
+   about getchar so that the newlib_stubs function is a fucntion
+   that helping the putchar and get char function.
+
+5. Give an example of a situation in which the salae Logic Analyzer
+   is the best bebugging method and include a screen shot of the
+   Logic application.
+
+   When the programmer did not found the error or need to know
+   exactly what is foing on in the trasferring process between
+   the machine and local computer.
+   Screenshot: check the Screenshot.png file.
+
+What did you lean, any difficulties you had?
+
+I was suffering when they asked to do Logic Analyzer. This part
+was my the last one after I finished all the code. The Logic
+Analyzer was quite new machine that I had never used before.
+I like to learn about machine and I learned alot from coding
+for the machine(STM32 board) but the funniest part was Logic
+Analyzer even it was the hardest part. I know how to analyze
+the computer signal even it was very simple and the graph
+the analyzer show was quite interesting.

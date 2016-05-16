@@ -1,0 +1,53 @@
+/////////////////////////////////////////////////////
+//
+// Won Yong Ha
+//
+// CSCI-C 335
+// Final Project
+//
+// Starts: 20 April 2016
+// Ends: 28 April 2016
+//
+/////////////////////////////////////////////////////
+
+Task:
+
+- Come up with idea for game: Won Yong
+- Initialize Wii nunchuk and read direction input from it: Won Yong
+- Wire the board every single time: Won Yong
+- Implement a linked list data structure to remember snake movement: Collaborative
+- Load and play audio files from SD card: Collaborative
+
+In our final project, I mostly handled with "nunchuk". Because I suggested
+the idea of the final project which was primarly using two nunchuk, I needed
+to figure out how to use both nunchuk in one time.
+
+For "initialize Wii nunchuk and read direction input form it", I was suffering
+to wire the proper pins which was PA9 and PA10. Because the wire should be on
+very specific pins as "PA", I needed to change from "B" initializing to "A"
+initializing.
+
+Also max did his own works on the simulator, we needed to change to adjust to
+actual board.
+
+After wiring board, we figure out that out snake should be the "linkedlist". We
+originally using the struct for saving the size and direction then we realized
+the snakes needed to remember the previous directions for following tails. That
+part was the very confusing part.
+
+
+Techical Challenge
+
+There was two major challenge on our project.
+ - find the proper pins for second nunchuk
+ - make snake
+Due to the STM board required the specific nunchuk pins for second nunchuk, we
+were suffering to find and initialize.
+Also the snake should recognized the previous direction and size we need to
+adjust the data structure.
+
+
+Project Start Over
+
+I probably using similar designed or technics but I want to added more functions.
+Such as making sound when snake eat "food" or mini games after "game over".

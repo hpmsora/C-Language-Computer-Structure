@@ -1,0 +1,42 @@
+Name: Won Yong Ha
+
+Partner: McMinn, Ryder Alexander
+
+Start: Feb 25 2015
+End: Mar 1 2016
+
+---------------------------------------------
+Question:
+
+1.
+	Advantage: easy to check the errors and easy to approach the result
+	Dieadcantage: slowing down the machine so much
+
+2.
+	spiReadWrite getting what to print on the LCD screen on the machine.
+	So, we need to put on higher level to the informations going through
+	the spiReadWrite.
+
+3.
+	LCD_CS_Deassert()
+	First of all, it initialize the machine control, makes rectangles and
+	sets the color of the shape or background.
+	The reason LCD_CS_Deassert() is important is it is a macro to machine
+	control to keep working the method.
+
+4.
+	Due to the ASCII code already defined in the program which each characters
+	refers to 8-Bits binary code. So the machine interprets the ASCII code to
+	machine language.
+
+5.
+	Due to the printf is not on the analyzer, it make function much faster.
+
+=============================================
+Difficulties
+
+This lab was relatively easier than other labs and was very interesting
+because we could design most of the programs. However, One of the most difficult
+parts of this lab checking slowing down the function due to printf because the
+difference of the speed was not really visible first few attempt. But later then,
+we realized we need press the button several more times.
