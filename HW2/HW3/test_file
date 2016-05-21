@@ -1,0 +1,4 @@
+.text
+.syntax unified
+.thumb
+	ands r0, r1

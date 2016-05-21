@@ -1,0 +1,26 @@
+Name:		Won Yong Ha
+User ID:    	woha
+
+Results:
+	Got the result of what the lab showed.
+
+	-- $wc < haiku
+	 3  5 32
+
+	-- $./test
+	Nothing much
+	The letter A
+	A string: Splash!
+	The number 11
+	The number b in hexadecimal
+	-5 is a negative number
+	The number 65
+	The number 41 in hexadecimal
+
+Difficulties:
+	In this lab most of the questions were not really hard but the wc function
+	was little comfused due to the 'nextline' session.
+
+What did you learn:
+     	 From this lab, I learned how to print the specific type of the varialbes
+	 and can count and get the files directly like how to get haiku.

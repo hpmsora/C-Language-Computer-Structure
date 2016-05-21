@@ -1,0 +1,19 @@
+Name:		Won Yong Ha (woha)
+Partner Name: 	Qian Dai (qdai)
+
+Result:
+	Complished all assignment. Properly print the character, hexadecimal, integer,
+	float, and double value in the GDB. 
+
+Difficulties:
+	Not really hard but it contains some conplicated and confused conception which
+	may be only able to solved by memorization. It is very crtical point that I
+	should memorize or know some of the basic type of variables and how to print
+	with proper way.
+	Using GDB was very new but it was okay to use since UIs helped alot.
+
+What did you learn:
+        Honestly, this lab was the most useful lab so far. The reason I felt it was
+	useful is I always felt confused about those kind of matching formatting of the
+	print session.
+	Also it is good to know how to use the GDB actually.

@@ -1,0 +1,46 @@
+Won Yong Ha (woha)
+
+C335 HW1
+
+Feb 6 2016
+
+Report
+
+Address and size of global variable state. (10 pts)
+
+Address	 : 00012fe8
+Size	  : 00000004
+
+
+Address and size of global variable state_counter. (10 pts)
+
+Address  : 00012fec
+Size	  : 00000004
+
+
+Starting address and size of function stop_light(). (10 pts)
+
+Address	  : 00008afc
+Size	   : 00000090
+
+
+Starting address and size of function inc(). (10 pts)
+
+Address	  : 00008af8
+Size	   : none
+
+
+Largest function in the executable HW1.elf. (10 pts)
+
+malloc_av
+
+
+Overall size of the executable HW1.elf in bytes. (10 pts)
+
+32KB
+
+text:	9656
+data:	2404
+bss:	268
+dec:	12328
+hex:	3028

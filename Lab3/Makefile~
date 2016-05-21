@@ -1,0 +1,8 @@
+CC = gcc
+CFLAGS = -g
+LDFLAGS =
+poly: poly.o
+	$(CC) $(LDFLAGS) -o poly poly.o
+
+poly.o: poly.c
+	$(CC) $(CFLAGS) -c poly.c

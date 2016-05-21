@@ -1,0 +1,9 @@
+Name: Won Yong Ha
+Username: woha
+
+
+Result: Yes I complished all of the installations and setting up the user id of Git. Also connecting with Github user account to my local machine and school unix machine. As what the assignment said, I wrote a "Hello World" program with c and Emacs. I did all the work what the assignment say^^.
+
+The most difficult step was connecting with Github account and the silo  and local machine. Thanks for my friend help, I complished esaily.
+
+The best thing I learned in the lab was how to use the Emacs such as how to save or quit the lab. I probably need to lean how to copy or paste the text.

@@ -1,0 +1,13 @@
+[woha@silo HW0]$ ./rpn
++ 3 4 5 6 f + f - f / f q
+cd: stack empty
+6
+5
+4
+3
+11
+4
+3
+-7
+3
+0

@@ -1,0 +1,15 @@
+#Won Yong Ha
+
+#variable
+CC = gcc
+CFLAGS = -g
+LDFLAGS =
+RM = rm
+
+#compiling
+out: hw3.c
+	$(CC) $(LDFLAGS) -o out hw3.c
+
+#cleaning
+clean:
+	$(RM) -f out
